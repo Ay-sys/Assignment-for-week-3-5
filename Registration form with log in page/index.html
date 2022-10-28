@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form with Log in page.</title>
+</head>
+<body>
+  <form>
+    <label>First Name</label><br>
+      <input type="text" name="First Name"><br>
+    <label>Last Name</label><br>
+      <input type="text" name="Last Name"><br>
+    <label>Phone Number</label><br>
+      <input type="number" name="Phone Number"><br>
+    <label>Email Add</label><br>
+      <input type="text" name="Email Address"><br>
+    <label>Gender</label><br>
+      <input type="radio" name="Gender" id= male>
+      <label for= Male>Male</label>
+      <input type="radio" name="Gender" id= Female>
+      <label for= Female>Female</label>
+      <input type="radio" name="Gender" id= Other>
+      <label for= Other>Other</label><br>
+    <label>Date of Birth</label><br>
+      <input type="date" name="Date of Birth"><br>
+    <label>Favourite Color</label>
+      <input type="color" name="color"><br>
+    <input type="submit" value="submit">
+  </form>
+  <div class="Log In"><br><br>
+    <h3> I already have an account</h3>
+    <form action="/success_page.php">
+      <label>Email</label>
+      <input type="text" id="email"><br>
+      <label>Password</label>
+      <input type="text" id="passowrd"><br><br>
+      <input type="submit" value="Log In">
+    </form>
+  </div>
+  
+</body>
+</html>

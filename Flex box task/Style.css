@@ -1,0 +1,109 @@
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+@import url('https:/fonts.google.com/specimen/Lexend+Deca');
+:root{
+   --bright-orange: hsl(31,77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0,0%, 100%, 0.75)
+    --very-light-gray: hsl(0, 0%,95%)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: 0;
+    border: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family:"Lexend Deca";
+    font-weight: 400;
+    display: flex;
+    place-content: center;
+    background-color: var(--very-light-gray);
+    height: 100vh;
+}
+h1{
+    font-family:'Big Shoulders Display',cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very-light-gray) ;
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;   
+    margin: 25px 0 60px 0;
+    color: var(--transparent-white);
+}
+.E{
+display: flex;
+width: 840px;
+align-items: center;
+justify-content: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px;
+    align-items: flex-start;
+}
+.Sedan{
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+.SUVs{
+    background-color:var(--dark-cyan);
+}
+.Luxury{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+button{
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size:15px;
+    border: solid 2px var(--very-light-gray);
+    background: var(--very-light-gray);
+    transition: all ease 0.3s;
+}
+.Sedan button {
+    color: hsl(31, 86%, 14%);
+}
+.SUVs button{
+    color: hsl(183, 93%, 12%);
+}
+.Luxury button{
+    color: hsl(180, 60%, 8%);
+}
+button:hover{
+    background: transparent;
+    color: var(--very-light-gray);
+}
+.circle{
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px){
+    p{
+        margin-bottom: 20px;
+    }
+    body{
+        height: auto;
+    }
+    .E{
+        flex-direction: column;
+        margin: 16% 0;
+        padding: 8%;
+    }
+    .box{
+        padding: 38px 44px;
+    }
+    .Sedan{
+        border-radius: 10px 10px 0 0;
+    }
+    .Luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
